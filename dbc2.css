@@ -5,25 +5,51 @@
 #header {
 	width: 100px;
 	height: 10px;
+	margin: 0 auto;
 }
 
 #content {
-	width: 50px;
+	width: 100%;
+	max-width: 1200px;
+	min-width: 960px;
 	height: 100px;
+	float: center;
 
 }
 
 #sidebar {
 	width: 20px;
 	height: 200px;
+	float: right;
 }
 
 #footer {
 	width: 100px;
 	height: 10px;
 }
+
 div {
 	padding: 10px;
 	border: 2px solid black;
 	margin: auto;
+}
+
+a:link {
+	text-decoration: none; 
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	color: purple;
+}
+
+a:active {
+	color: green;
+}
+
+a {
+	caption-side: top;
 }
