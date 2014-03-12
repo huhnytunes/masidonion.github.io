@@ -1,0 +1,17 @@
+p {
+	font-size: 13px;
+	color: blue;
+	font-family: Arial;
+}
+
+body {
+	font-size: 12px;
+}
+
+#1 {
+	background-color: aqua;
+}
+
+.strong {
+	font-size: 14px;
+}
