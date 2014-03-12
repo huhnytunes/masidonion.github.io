@@ -1,0 +1,29 @@
+.red {
+	color: red;
+}
+
+#header {
+	width: 100px;
+	height: 10px;
+}
+
+#content {
+	width: 50px;
+	height: 100px;
+
+}
+
+#sidebar {
+	width: 20px;
+	height: 200px;
+}
+
+#footer {
+	width: 100px;
+	height: 10px;
+}
+div {
+	padding: 10px;
+	border: 2px solid black;
+	margin: auto;
+}
