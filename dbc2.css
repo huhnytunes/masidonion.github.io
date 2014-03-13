@@ -2,7 +2,11 @@
 	color: red;
 }
 
-#header {
+body {
+	font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+header {
 	width: 100px;
 	height: 10px;
 	margin: 0 auto;
@@ -23,7 +27,7 @@
 	float: right;
 }
 
-#footer {
+footer {
 	width: 100px;
 	height: 10px;
 }

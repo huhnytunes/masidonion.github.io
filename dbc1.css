@@ -6,6 +6,7 @@ p {
 
 body {
 	font-size: 12px;
+	font-family:'Revalia', cursive;
 }
 
 #A {
@@ -14,4 +15,20 @@ body {
 
 .strong {
 	font-size: 14px;
+}
+
+a:link {
+	text-decoration: none; 
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	color: purple;
+}
+
+a:active {
+	color: green;
 }
