@@ -45,11 +45,33 @@
 	display: block;
 }
 
+.alpha {
+	margin-left: 0;
+}
+.beta {
+	margin-right: 0;
+}
+
 body {
 	font-family: 'Gafata', sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	max-width: 100%;
 }
 
 header {
 	text-align: left;
 	font-size: 1.5em;
+}
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#intro {
+	max-width: 15%;
+	border: 1px solid black;
+	text-align: center;
+	font-weight: 400;
 }
