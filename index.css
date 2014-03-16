@@ -14,6 +14,11 @@ header {
 	text-align: center;
 }
 
+.container {
+	width: 100%;
+	vertical-align: top; 
+}
+
 
 body {
 	font-family: 'Gafata', sans-serif;
@@ -30,24 +35,36 @@ footer {
 
 }
 
+img {
+	height: 100%;
+	vertical-align: text-bottom; 
+}
+
 #about {
-	max-width: 15%;
+	width: 30%;
+	padding: 10px;
 	border: 1px solid black;
-	text-align: center;
 	font-weight: 400;
 	background-color: orange;
+	display: inline-block;
+	text-align: left;
+	vertical-align: text-bottom; 
 }
 
 #main_post {
-	float: center;
-	max-width: 40%; 
+	width: 30%; 
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
 }
 
 #music {
-	float: right;
-	text-align: center;
 	caption-side: top;
 	font-weight: 750;
+	width: 30%;
+	padding: 10px;
+	display: inline-block;
+	text-align: right;
 }
 
 #links {
