@@ -2,14 +2,6 @@ h1 {
 	text-align: center;
 }
 
-h3 {
-	
-}
-
-p {
-	text-align: center;
-}
-
 a:visited {
 	color: red;
 }
@@ -17,4 +9,14 @@ a:visited {
 body {
 	background-color: black;
 	color: white;
+	font-family: 'Gafata', sans-serif;
+	margin: 5em; 
+}
+
+p {
+	text-indent: 1.5em; 
+}
+
+br {
+	text-indent: 1.5em; 
 }
