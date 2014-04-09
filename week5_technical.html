@@ -1,0 +1,42 @@
+<!DOCTYPE hmtl> 
+<html> 
+<head>
+	<link rel="stylesheet" type="text/css" href="blog.css">
+	<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+	<title>HuhnyTunes</title>
+</head>
+
+<body>
+<h1> Multi-Dice Class </h1> 
+	<p> This week we worked on creating a Die class that contained within it a dice object, with a user defined number of sides, that held either a number or a string on each of them. Although this was a great start, I thought it would be fun to add another die to the mix, meaning we will be rolling two number-sided die simultaneously, then asking for an output that is the sum of both of the rolls together. </p>
+<h4> First, we must create and initialize our new class: </h4> 
+	<p> Create a new class, MultiDie, that initializes with two parameters: side1 and side2. Turn both of these parameters into instance variables by using the @ class. Then, raise a new Argument Error if either of the number of sides inputted are less than 1. </br> </br> 
+		class MultiDie </br> 
+  def initialize(sides1, sides2) </br> 
+    @sides1 = sides1</br> 
+    @sides2 = sides2</br> 
+    if @sides1 < 1|| @sides2 < 1 </br>  
+      raise ArgumentError.new("Please input a number of sides greater than 0.") </br> 
+    end </br> 
+  end </br> </p> 
+
+ <h4> Now we will create our sides method: </h4> 
+ 	<p> Create a new method, sides, that returns the total of adding the two instance varaible, sides, together. </br> </br> 
+ 		def sides </br>
+    return @sides1 + @sides2 </br>
+  end </br> </p>
+
+ <h4> Now we will create our roll method: </h4> 
+ 	<p> Create a new method roll and define two new instance variables, @roll1 and @roll2, which are equal to adding 1 to their respective sides instance variables and randoming it (with rand enumerable). Then create a third variable, @roll_total, which is equal to adding the two rolls together. Then puts to the user what each rolled and the total. </br></br>
+ 		def roll </br> 
+    @roll1 = 1 + rand(@sides1) </br> 
+    @roll2 = 1 + rand(@sides2)</br> 
+    @roll_total = @roll1 + @roll2 </br> 
+    puts "Dice 1 rolled #{@roll1} and dice 2 rolled #{@roll2}. Your total is: #{@roll_total}!"</br> 
+  end</br> 
+end </br> </p> 
+
+<p> Well done! You have now created a functioning multi-dice class. From this, you might also add more die into the mix, or even save previous rolls in order to see which numbers are most likely to come up despite the 'random' nature of the methodology ... Enjoy ! 
+
+</body> 
+</html> 
