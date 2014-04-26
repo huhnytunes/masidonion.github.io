@@ -1,0 +1,22 @@
+<!DOCTYPE hmtl> 
+<html> 
+<head>
+	<link rel="stylesheet" type="text/css" href="blog.css">
+	<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+	<title>HuhnyTunes</title>
+</head>
+
+<body>
+<h1> SQL vs. NoSQL (Databases) </h1> 
+	<p> First, off just to clarify here before diving into the debate, when referring to SQL vs. NoSQL, we are really talking about relational vs. non-relational databases, rather than the specific language we are using to access them each individually (ie. search language queries). This is an important point of differentiation because in this sense, the SQL NoSQL debate is moreso an overarching database structure argument rather than specifically an access language one, which in my opinion, actually makes it more interesting and relevant for all those developers who might need to access / create / modify databases (meaning, all of them). </p> 
+	<p> With that nuance point (that is actually rather important) aside, let's begin to discuss SQL vs. NoSQL! At first, and I know this was true for me at least, we might ask ourself: why would we not want to use a relational database? Meaning, how could a non-relational database ever be better than one built on relations? This is a logical point as we innately want to think that relationship-driven databases would be both easier to create and access. But this is not always the case. Here are some of the arguments against relational (SQL) databases: <br> 
+		<ul> 
+			<li> Relational data that is hierarchal (such as XML) is very difficult to map to typical programming languages because of the fact that it includes complex data types. This makes something like an object that contains other objects (like we have already begun to see in Ruby) inherently difficult to map to a single row / line / field in a relational table, therefore becomes a point against SQL. </li> 
+			<li> Similarly to the point above, the fact that hierarchal, complex data does not map well to an SQL-based system, this makes programming client code to access these databases difficult and time consuming. </li> 
+			<li> Perhaps most importantly, relational databases often contain a lot of join statements (in order to properly access all of the stored data) and ultimately this can significantly slow down the accessing of information on these systems, especially when large amounts of people are trying to access this large amount of data. Although this is not always the case (as not everyone is storing of millions of rows / fields in their SQL database), it does affect companies who require the ability to house large amounts of client information in their databses. </li> 
+		</ul> 
+	<p> These points, although salient, don't always hold-up though in reality. After doing some research, I quickly found that there are an equal amount of arguments on the other side of the SQL vs. NoSQL debate, as each of these points above can be countered so long as the developer has the proper knowledge / skillset when it comes to creating relational databases. For example, numerous big banks have found a way to store millions of customer's information within relational databases with next to no slow down. And even if it took them a while to get there, it means that anyone else trying to create an SQL database should have an even easier time: most of us just don't need to store that much information at once. </p> 
+	<p> In the end, it seems that both relational (SQL) and non-relational (NoSQL) databases have their plusses, and even their minuses can be mitigated with a little more research / experience. I think as a programmer it is vital to always be flexible, with a willigness to adapt to any situation that is thrown our way. In this sense, both types of databases must both be understood and mastered in order for us to best thrive as a blossoming developer! </p> 
+
+</body> 
+</html> 
