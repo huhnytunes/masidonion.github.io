@@ -1,0 +1,19 @@
+th {
+	text-align: center; 
+}
+
+#enumerable {
+ 	border: 1px black solid;
+}
+
+.example {
+	text-indent: 1em; 
+}
+
+table, td {
+	border: 1px black solid;
+}
+
+h1 {
+	text-align: center; 
+}

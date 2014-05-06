@@ -1,0 +1,84 @@
+<!DOCTYPE hmtl> 
+<html> 
+<head>
+	<link rel="stylesheet" type="text/css" href="unit3_cheatsheet.css">
+	<title>Ruby Enumerables</title>
+</head>
+
+<body>
+	<h1> Ruby Enumerables Cheat Sheet </h1> 
+<table>
+  <thead>
+    <tr>
+      <th>Enumerable</th>
+      <th>Description</th>
+      <th>Example</th> 
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-collect">Collect</a></td>
+      <td>Returns a new array with the results of running block once for every element in enum</td>
+      <td class="example">(1..4).collect {|i| i*i }   #=> [1 4 9 16]</td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-count">Count</td>
+      <td>Returns the number of items in enum where size is called if it responds to it otherwise the items are counted through enumeration.</td>
+      <td class="example">ary = [1, 2, 4, 2] || ary.count {|x|x%2==0} #=> 3 </td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-each_slice">Each_Slice</td>
+      <td>Iterates the given block for each slice of <n> elements. If no block is given returns an enumerator</td>
+      <td class="example">(1..10).each_slice(3) {|a| p a} </td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-find">Find</td>
+      <td>Passes each entry in enum to block. Returns the first for which block is not false.</td>
+      <td class="example">(1..10).detect  {|i| i % 5 == 0 and i % 7 == 0 } #=> nil </td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-group_by">Group_by</td>
+      <td>Returns a hash which keys are evaluated result from the block and values are arrays of elements in enum corresponding to the key.</td>
+      <td class="example">1..6).group_by {|i| i%3} #=> {0=>[3, 6] 1=>[1, 4] 2=>[2, 5]} </td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-include?">Include?</td>
+      <td>Returns true if any member of enum equals obj.</td>
+      <td class="example">['a','b','c'].include?('a') #=> true </td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-inject">Inject</td>
+      <td>Combines all elements of enum by applying a binary operation specified by a block or a symbol that names a method or operator.</td>
+      <td class="example">(5..10).inject {|sum, n| sum + n } #=> 45 </td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-map">Map</td>
+      <td>Returns a new array with the results of running block once for every element in enum.</td>
+      <td class="example"> [1..4].map {|x| x * 2 } #=> [2,4,6,8] </td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-reduce">Reduce</td>
+      <td>Combines all elements of enum by applying a binary operation specified by a block or a symbol that names a method or operator.</td>
+      <td class="example">(5..10).reduce(:+)  #=> 45 </td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-select">Select</td>
+      <td>Returns an array containing all elements of enum for which block is not false</td>
+      <td class="example">(1..10).find_all {|i|  i % 3 == 0 }   #=> [3, 6, 9] </td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-sort">Sort</td>
+      <td>Returns an array containing the items in enum sorted either according to their own <=> method or by using the results of the supplied block.</td>
+      <td class="example">(1..10).sort {|a b| b <=> a}   #=> [10, 9, 7, 6, 5, 4, 3, 2, 1] </td> 
+    </tr>
+    <tr>
+      <td><a href="http://www.ruby-doc.org/core-1.9.3/Enumerable.html#method-i-zip">Zip</td>
+      <td>Takes one element from enum and merges corresponding elements from each args.</td>
+      <td class="example">[1, 2].zip(a, b)  #=> [[1, 4, 7] [2, 5, 8]] </td> 
+    </tr>
+  </tbody>
+</table>
+
+</body> 
+</html> 
